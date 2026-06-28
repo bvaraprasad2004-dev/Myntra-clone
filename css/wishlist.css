@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f8f8f8;
+}
+
+header{
+    background:#fff;
+    height:75px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 60px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    font-weight:600;
+    margin-left:25px;
+}
+
+nav a:hover{
+    color:#ff3f6c;
+}
+
+.wishlist-section{
+    padding:40px;
+}
+
+.wishlist-section h1{
+    color:#ff3f6c;
+    margin-bottom:30px;
+    text-align:center;
+}
+
+.wishlist-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+}
+
+.card-content h3{
+    color:#333;
+}
+
+.card-content p{
+    margin:10px 0;
+    color:#777;
+}
+
+.price{
+    color:#ff3f6c;
+    font-size:18px;
+    font-weight:bold;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    background:#ff3f6c;
+    color:white;
+    cursor:pointer;
+    font-size:15px;
+    border-radius:8px;
+    margin-top:10px;
+}
+
+button:hover{
+    background:#e73360;
+}
