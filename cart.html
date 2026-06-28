@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="cart.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <div class="cart-container">
+
+    <!-- Left Side -->
+    <div class="cart-items">
+
+      <h2>Shopping Bag (2 Items)</h2>
+
+      <div class="cart-card">
+        <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=500"
+          alt="Product">
+
+        <div class="product-details">
+          <h3>Maybelline Lipstick</h3>
+          <p>Matte Finish • Red Shade</p>
+
+          <div class="price-row">
+            <span class="current-price">₹499</span>
+            <span class="old-price">₹799</span>
+            <span class="discount">38% OFF</span>
+          </div>
+
+          <div class="actions">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+          </div>
+        </div>
+
+        <button class="remove-btn">
+          <i class="fa-solid fa-trash"></i>
+        </button>
+      </div>
+
+      <div class="cart-card">
+        <img src="https://images.unsplash.com/photo-1625772452859-1c03d5bf1137?w=500"
+          alt="Product">
+
+        <div class="product-details">
+          <h3>Vitamin C Serum</h3>
+          <p>30ml • Brightening Formula</p>
+
+          <div class="price-row">
+            <span class="current-price">₹699</span>
+            <span class="old-price">₹999</span>
+            <span class="discount">30% OFF</span>
+          </div>
+
+          <div class="actions">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+          </div>
+        </div>
+
+        <button class="remove-btn">
+          <i class="fa-solid fa-trash"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Right Side -->
+    <div class="price-details">
+
+      <h3>Price Details</h3>
+
+      <div class="coupon-box">
+        <input type="text" placeholder="Apply Coupon">
+        <button>Apply</button>
+      </div>
+
+      <div class="price-item">
+        <span>Total MRP</span>
+        <span>₹1798</span>
+      </div>
+
+      <div class="price-item">
+        <span>Discount</span>
+        <span class="green">- ₹600</span>
+      </div>
+
+      <div class="price-item">
+        <span>Platform Fee</span>
+        <span>₹20</span>
+      </div>
+
+      <div class="price-item">
+        <span>Delivery</span>
+        <span class="green">FREE</span>
+      </div>
+
+      <hr>
+
+      <div class="total">
+        <span>Total Amount</span>
+        <span>₹1218</span>
+      </div>
+
+      <button class="checkout-btn">
+        PLACE ORDER
+      </button>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
