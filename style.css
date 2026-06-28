@@ -1,0 +1,704 @@
+/* ===================================
+   MYNTRA CLONE - KIDS PAGE
+   PART 1
+=================================== */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8f8f8;
+    color:#222;
+}
+
+/* Links */
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+/* Images */
+
+img{
+    width:100%;
+    display:block;
+}
+
+/* ===================================
+   NAVBAR
+=================================== */
+
+.navbar{
+
+    position:sticky;
+
+    top:0;
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px 8%;
+
+    background:#fff;
+
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
+
+    z-index:999;
+}
+
+/* Logo */
+
+.logo h2{
+
+    color:#ff3f6c;
+
+    font-size:32px;
+
+    font-weight:800;
+
+    letter-spacing:2px;
+}
+
+/* Navigation */
+
+nav{
+
+    display:flex;
+
+    gap:28px;
+}
+
+nav a{
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+nav a:hover{
+
+    color:#ff3f6c;
+}
+
+.active{
+
+    color:#ff3f6c;
+}
+
+/* Search */
+
+.search-box{
+
+    background:#f5f5f6;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:10px 18px;
+
+    border-radius:30px;
+}
+
+.search-box input{
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    width:220px;
+
+    font-size:15px;
+}
+
+.search-box i{
+
+    color:#777;
+
+    cursor:pointer;
+}
+
+/* Icons */
+
+.icons{
+
+    display:flex;
+
+    gap:22px;
+
+    font-size:22px;
+}
+
+.icons i{
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.icons i:hover{
+
+    color:#ff3f6c;
+
+    transform:scale(1.15);
+}
+
+/* ===================================
+   OFFER BAR
+=================================== */
+
+.offer-bar{
+
+    background:#ff3f6c;
+
+    color:white;
+
+    text-align:center;
+
+    padding:12px;
+
+    font-size:16px;
+
+    font-weight:600;
+}
+
+/* ===================================
+   HERO SECTION
+=================================== */
+
+.hero{
+
+    height:550px;
+
+    background:
+    linear-gradient(rgba(0,0,0,.45),
+    rgba(0,0,0,.45)),
+    url("https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=1600");
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    color:white;
+}
+
+.hero-content{
+
+    width:700px;
+
+    max-width:90%;
+}
+
+.hero-content h1{
+
+    font-size:58px;
+
+    font-weight:800;
+
+    margin-bottom:20px;
+}
+
+.hero-content p{
+
+    font-size:20px;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+}
+
+.hero-content button{
+
+    background:#ff3f6c;
+
+    color:white;
+
+    border:none;
+
+    padding:16px 40px;
+
+    border-radius:40px;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.hero-content button:hover{
+
+    background:#e91e63;
+
+    transform:translateY(-4px);
+}
+
+/* Section Heading */
+
+section h2{
+
+    text-align:center;
+
+    font-size:36px;
+
+    margin-bottom:40px;
+
+    font-weight:700;
+}
+/* ===================================
+   CATEGORY SECTION
+=================================== */
+
+.category{
+    padding:70px 8%;
+    background:#ffffff;
+}
+
+.category-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+}
+
+.category-card{
+    background:#ffffff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    transition:0.4s ease;
+    cursor:pointer;
+}
+
+.category-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.category-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.category-card h3{
+    text-align:center;
+    margin-top:15px;
+    font-size:22px;
+    color:#222;
+}
+
+.category-card p{
+    text-align:center;
+    color:#666;
+    margin:10px 15px 20px;
+    font-size:15px;
+}
+
+/* ===================================
+   TOP BRANDS
+=================================== */
+
+.brands{
+    background:#f8f8f8;
+    padding:70px 8%;
+}
+
+.brand-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:25px;
+}
+
+.brand-card{
+    background:#ffffff;
+    border-radius:12px;
+    text-align:center;
+    padding:30px 20px;
+    transition:0.4s;
+    cursor:pointer;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.brand-card:hover{
+    background:#ff3f6c;
+    color:white;
+    transform:scale(1.05);
+}
+
+.brand-card h3{
+    font-size:24px;
+    margin-bottom:10px;
+}
+
+.brand-card p{
+    font-size:15px;
+}
+
+/* ===================================
+   SECTION SPACING
+=================================== */
+
+.category,
+.brands{
+    scroll-margin-top:80px;
+}
+/* ===================================
+   TRENDING PRODUCTS
+=================================== */
+
+.products{
+    padding:70px 8%;
+    background:#ffffff;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.product-card{
+    position:relative;
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 18px rgba(0,0,0,0.08);
+    transition:0.4s ease;
+}
+
+.product-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 12px 25px rgba(0,0,0,0.15);
+}
+
+.product-card img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+}
+
+/* Discount Badge */
+
+.discount{
+    position:absolute;
+    top:15px;
+    left:15px;
+    background:#ff3f6c;
+    color:#fff;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+}
+
+/* Product Title */
+
+.product-card h3{
+    font-size:20px;
+    margin:18px 15px 8px;
+}
+
+/* Price */
+
+.price{
+    color:#ff3f6c;
+    font-size:22px;
+    font-weight:700;
+    margin:0 15px;
+}
+
+/* Rating */
+
+.rating{
+    margin:10px 15px;
+    color:#f5a623;
+    font-size:15px;
+}
+
+/* Button */
+
+.product-card button{
+    width:calc(100% - 30px);
+    margin:15px;
+    padding:12px;
+    border:none;
+    background:#ff3f6c;
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.product-card button:hover{
+    background:#222;
+}
+
+/* Wishlist Heart */
+
+.product-card::after{
+    content:"♡";
+    position:absolute;
+    top:15px;
+    right:15px;
+    width:35px;
+    height:35px;
+    background:#fff;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:20px;
+    color:#ff3f6c;
+    box-shadow:0 3px 10px rgba(0,0,0,0.2);
+    cursor:pointer;
+}
+
+/* Product Image Zoom */
+
+.product-card img{
+    transition:.4s;
+}
+
+.product-card:hover img{
+    transform:scale(1.05);
+}
+/* ===================================
+   NEWSLETTER
+=================================== */
+
+.newsletter{
+    background:#fff0f4;
+    text-align:center;
+    padding:70px 8%;
+}
+
+.newsletter h2{
+    font-size:38px;
+    color:#222;
+    margin-bottom:15px;
+}
+
+.newsletter p{
+    color:#666;
+    margin-bottom:25px;
+    font-size:17px;
+}
+
+.newsletter input{
+    width:350px;
+    max-width:90%;
+    padding:15px;
+    border:2px solid #ddd;
+    border-radius:30px;
+    outline:none;
+    font-size:16px;
+}
+
+.newsletter button{
+    padding:15px 30px;
+    margin-left:10px;
+    border:none;
+    border-radius:30px;
+    background:#ff3f6c;
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.newsletter button:hover{
+    background:#222;
+}
+
+/* ===================================
+   FOOTER
+=================================== */
+
+footer{
+    background:#1f1f1f;
+    color:#fff;
+    padding:60px 8% 30px;
+}
+
+.footer-content{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:40px;
+}
+
+.footer-content h3,
+.footer-content h4{
+    margin-bottom:18px;
+}
+
+.footer-content p{
+    color:#cfcfcf;
+    margin:10px 0;
+    transition:.3s;
+}
+
+.footer-content p:hover{
+    color:#ff3f6c;
+    cursor:pointer;
+}
+
+footer hr{
+    margin:35px 0;
+    border:1px solid #444;
+}
+
+.copyright{
+    text-align:center;
+    color:#bdbdbd;
+    font-size:15px;
+}
+
+/* ===================================
+   SCROLLBAR
+=================================== */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#ff3f6c;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#ececec;
+}
+
+/* ===================================
+   RESPONSIVE DESIGN
+=================================== */
+
+@media(max-width:992px){
+
+    .navbar{
+        flex-direction:column;
+        gap:20px;
+        padding:20px;
+    }
+
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:18px;
+    }
+
+    .search-box input{
+        width:180px;
+    }
+
+    .hero{
+        height:450px;
+    }
+
+    .hero-content h1{
+        font-size:40px;
+    }
+
+    .hero-content p{
+        font-size:17px;
+    }
+
+    .newsletter input{
+        width:100%;
+        margin-bottom:15px;
+    }
+
+    .newsletter button{
+        width:100%;
+        margin-left:0;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .hero{
+        height:380px;
+    }
+
+    .hero-content h1{
+        font-size:32px;
+    }
+
+    .hero-content p{
+        font-size:15px;
+    }
+
+    section h2{
+        font-size:28px;
+    }
+
+    .logo h2{
+        font-size:26px;
+    }
+
+    .icons{
+        font-size:20px;
+    }
+
+}
+/* ==========================
+   KIDS HERO
+========================== */
+
+.kids-hero{
+    background:
+    linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)),
+    url("https://images.pexels.com/photos/3662667/pexels-photo-3662667.jpeg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* ==========================
+   WOMEN HERO
+========================== */
+
+.women-hero{
+    background:
+    linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+    url("https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1600");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
